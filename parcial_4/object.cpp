@@ -12,8 +12,8 @@ object::object()
     posy = 550;
     r = 65;
     mass = 50;
-    velx = 20;
-    vely = 50;
+    velx = 40;
+    vely = 60;
     K = 0.08;
     e = 0.2;
 
