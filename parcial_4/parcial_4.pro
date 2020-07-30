@@ -19,11 +19,13 @@ SOURCES += \
     actualizaciones.cpp \
     main.cpp \
     mainwindow.cpp \
+    object.cpp \
     objeto.cpp
 
 HEADERS += \
     actualizaciones.h \
     mainwindow.h \
+    object.h \
     objeto.h
 
 FORMS += \

@@ -9,7 +9,7 @@ objeto::objeto()
     setPixmap(QPixmap(":/imagen/bolaroja (1).png").scaled(50,50));
     float posx, posy, velx , vely ,r, mass, K, e;
     posx = random_number;
-    posy = 600;
+    posy = 550;
     r = 65;
     mass = 50;
     velx = 0;
