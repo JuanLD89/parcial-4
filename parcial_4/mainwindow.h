@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +17,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void niveles();
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QGraphicsScene *scene;      //scene que muestra los objetos animados
+    QTimer *timer;
+
+    int h_limit;                //longitud en X del mundo
+    int v_limit;
+    int x = 0;
+
+
 };
 #endif // MAINWINDOW_H
