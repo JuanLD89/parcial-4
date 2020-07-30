@@ -129,6 +129,6 @@ void MainWindow::niveles(){
         this->resize(ui->graphicsView->width()+100, ui->graphicsView->height()+100);
         QTimer *timer5 = new QTimer();
         QObject :: connect(timer5, SIGNAL(timeout()), this, SLOT(platforms()));
-        timer5->start(4000);
+        timer5->start(3000);
     }
 }

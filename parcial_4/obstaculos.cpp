@@ -2,8 +2,8 @@
 
 obstaculos::obstaculos()
 {
-    int random_number = rand() % 1000;
-    int random_number1 = rand() %600;
+    int random_number = rand() % 1100;
+    int random_number1 = rand() %700;
 
     setPos(random_number,random_number1);
 
@@ -13,7 +13,7 @@ obstaculos::obstaculos()
     QTimer * timer = new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(move3()));
 
-    timer->start(2000);
+    timer->start(500);
 }
 
 void obstaculos::move3()

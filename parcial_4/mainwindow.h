@@ -41,11 +41,10 @@ private:
     int x = 0;
     int w = 0;
     int k = 0;
+    int p = 0;
     void bordercollision(actualizaciones *b);   //metodo para las colisiones con los bordes del mundo
     QList<objeto*> specialobject;   //lista con los cuerpos para mostrarlos.
     QList<object*> objetoo;   //lista con los cuerpos para mostrarlos.
-
-
 
 };
 #endif // MAINWINDOW_H
