@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include <QTimer>
+#include "actualizaciones.h"
+#include "objeto.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +31,9 @@ private:
     int h_limit;                //longitud en X del mundo
     int v_limit;
     int x = 0;
+    int w = 0;
+    QList<objeto*> specialobject;   //lista con los cuerpos para mostrarlos.
+
 
 
 };

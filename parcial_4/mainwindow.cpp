@@ -33,6 +33,13 @@ void MainWindow::on_pushButton_clicked()
 {
     x = 1;
     niveles();
+    specialobject.push_back(new objeto);
+    specialobject[w] -> actualizar(v_limit);
+    specialobject[w] -> setFlag(QGraphicsItem::ItemIsFocusable);
+    specialobject[w] -> setFocus();
+
+    scene -> addItem(specialobject[w]);
+    w+=1;
 }
 
 void MainWindow::niveles(){
