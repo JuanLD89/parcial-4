@@ -73,6 +73,12 @@ void MainWindow::creatobjeto()
     k+=1;
 }
 
+void MainWindow::platforms()
+{
+        obstaculos *plat = new obstaculos();
+        scene->addItem(plat);
+}
+
 void MainWindow::bordercollision(actualizaciones *c)//son los choques con los bordes
 {
     if (x == 1){
@@ -121,6 +127,8 @@ void MainWindow::niveles(){
         scene->addRect(scene->sceneRect());
         ui->graphicsView->resize(scene->width(),scene->height());
         this->resize(ui->graphicsView->width()+100, ui->graphicsView->height()+100);
-
+        QTimer *timer5 = new QTimer();
+        QObject :: connect(timer5, SIGNAL(timeout()), this, SLOT(platforms()));
+        timer5->start(4000);
     }
 }

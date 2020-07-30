@@ -20,13 +20,15 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     object.cpp \
-    objeto.cpp
+    objeto.cpp \
+    obstaculos.cpp
 
 HEADERS += \
     actualizaciones.h \
     mainwindow.h \
     object.h \
-    objeto.h
+    objeto.h \
+    obstaculos.h
 
 FORMS += \
     mainwindow.ui

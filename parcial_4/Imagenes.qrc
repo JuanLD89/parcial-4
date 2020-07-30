@@ -2,5 +2,6 @@
     <qresource prefix="/imagen">
         <file>bolaroja (1).png</file>
         <file>bolaazul (1).png</file>
+        <file>linea_azul.png</file>
     </qresource>
 </RCC>

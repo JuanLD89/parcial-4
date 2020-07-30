@@ -7,6 +7,7 @@
 #include "actualizaciones.h"
 #include "objeto.h"
 #include "object.h"
+#include "obstaculos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,6 +26,7 @@ private slots:
     void actualizar();
     void actualizar1();
     void creatobjeto();
+    void platforms();
 
     void on_pushButton_clicked();
 
